@@ -101,7 +101,7 @@
 
         /* Container */
         .container {
-            max-width: 960px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0;
         }
@@ -375,10 +375,15 @@
             display: block;
         }
 
-        @page { size: landscape; }
+        @page { size: landscape; margin: 10mm; }
         @media print {
-            body { background: white; }
-            .cover { min-height: auto; padding: 80px 40px; }
+            body { background: white; font-size: 13px; }
+            .container { max-width: 100%; }
+            .cover { min-height: auto; padding: 50px 60px; }
+            .content { padding: 28px 60px 40px; }
+            .section-header { padding: 30px 60px 24px; }
+            .stats-row { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+            .toc ol { columns: 3; }
             h2, h3, h4 {
                 page-break-after: avoid !important;
                 break-after: avoid !important;
