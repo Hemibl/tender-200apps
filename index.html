@@ -88,6 +88,15 @@
             padding: 16px 20px;
             width: 200px;
             text-align: center;
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+        .cover .sol-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
         }
         .cover .sol-card .sol-num {
             font-size: 28px;
@@ -420,18 +429,18 @@
     <div class="subtitle">שלושה פתרונות משלימים לצמצום אי-תיקוף - מאכיפה חכמה ועד מניעה מלאה</div>
 
     <div class="solutions-preview">
-        <div class="sol-card">
+        <a href="#solution-1" class="sol-card">
             <div class="sol-num">1</div>
             <div class="sol-title">אפליקציית פקחים חכמה<br>אכיפה מונחית נתונים</div>
-        </div>
-        <div class="sol-card">
+        </a>
+        <a href="#solution-2" class="sol-card">
             <div class="sol-num">2</div>
             <div class="sol-title">בקרת מצלמות + זיהוי פנים<br>אכיפה מרחוק</div>
-        </div>
-        <div class="sol-card">
+        </a>
+        <a href="#solution-3" class="sol-card">
             <div class="sol-num">3</div>
             <div class="sol-title">BIBO + אישור נוסע<br>גבייה אוטומטית</div>
-        </div>
+        </a>
     </div>
 
     <div style="margin-top: 50px;">
@@ -473,7 +482,7 @@
 <div class="container">
 
 <!-- ============================== SOLUTION 1 ============================== -->
-<div class="section-header" style="page-break-before: always !important; break-before: page !important;">
+<div id="solution-1" class="section-header" style="page-break-before: always !important; break-before: page !important;">
     <div class="company">מאאתיים אפליקציות בע"מ - פתרון 1</div>
     <h1>אפליקציית ניהול אכיפת תיקוף בתחבורה הציבורית</h1>
     <div class="subtitle">שיפורי סיכויי "תפיסת" אירועי אי-תיקוף על ידי פקחים</div>
@@ -800,7 +809,7 @@
 </div>
 
 <!-- ============================== SOLUTION 2 ============================== -->
-<div class="section-header" style="page-break-before: always !important; break-before: page !important;">
+<div id="solution-2" class="section-header" style="page-break-before: always !important; break-before: page !important;">
     <div class="company">מאאתיים אפליקציות בע"מ - פתרון 2</div>
     <h1>מסמך אפיון - פתרון 2</h1>
     <div class="subtitle">אכיפה חצי-אוטומטית באמצעות מצלמות קיימות וזיהוי פנים</div>
@@ -1361,7 +1370,7 @@
 </div>
 
 <!-- ============================== SOLUTION 3 ============================== -->
-<div class="section-header" style="page-break-before: always !important; break-before: page !important;">
+<div id="solution-3" class="section-header" style="page-break-before: always !important; break-before: page !important;">
     <div class="company">מאאתיים אפליקציות בע"מ - פתרון 3</div>
     <h1>מסמך אפיון - הצעה מס' 3</h1>
     <div class="subtitle">גבייה אוטומטית עם ביקונים - BIBO + אישור נוסע</div>
